@@ -26,12 +26,14 @@ Follow the below instructions to succesfully deploy my web application:
 *	Run Apache and MySQL Servers on XAMPP
 *	Unzip the file webapp_p2p into htdocs sub-folder within the xampp folder
 *	Launch MySQL Workbench and create a DBA user by running the following code in MySql Workbench:
-...
+
+```
 CREATE USER 'DBAuser'@'localhost' IDENTIFIED BY 'Xampp640697';
 -- username: DBAuser & password: Xampp64097
 GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost'; 
 -- To use custom username & password: change content in DbConnection.php file using a text editor
-...
+```
+
 *	open the script prod_p2p_bk from the contents of the unzipped folder
 *	Run the script to import database
 *	The restored database does not have any unused views, functions and stored procedures and has the stored procedures required to generate reports
