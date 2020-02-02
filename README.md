@@ -1,10 +1,12 @@
 # mysql-webapp
 
-Prod_p2p is a web application that provides protein-to-phenotype information. It is developed on a MySQL database, PHP, HTML and CSS.
+prod_p2p is a web application that provides protein-phenotype information. A phenotype is the set of observable characteristics of an individual resulting from the interaction of its genotype with the environment.
+
+I developed this web application by engineering a MySQL database and utilizing PHP, HTML & CSS.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Please continue reading for notes on how to deploy my project on your system.
+Kindly continue reading for instructions on how to deploy my project on your local machine.
 
 ### Prerequisites
 
@@ -12,40 +14,49 @@ What are the tools you need to install?
 
 ```
 You must have administrator access to install the following:
-Browser     Chrome or any other
-Servers     Web server, database server, PHP server --> XAMPP
-XAMPP file  5.6.32/PHP 5.6.32 or better
-MySQL       MySQL Workbench
-Text Editor VS Code or any other
+
+Browser       Chrome or any other
+Servers       Web server, database server, PHP server
+XAMPP         5.6.32/PHP 5.6.32 or better
+MySQL         MySQL Workbench
+Text Editor   VS Code or any other
 ```
 
 ## Deployment
 
-Follow the below instructions to succesfully deploy my web application:
+Follow the instructions to successfully deploy my web application:
 
-*	Run Apache and MySQL Servers on XAMPP
-*	Unzip the file webapp_p2p into htdocs sub-folder within the xampp folder
+*	Run Apache server and MySQL server on XAMPP
+*	Unzip the file webapp_p2p into htdocs sub-folder within the installed xampp folder
 *	Launch MySQL Workbench and create a DBA user by running the following code in MySql Workbench:
 
 ```
-CREATE USER 'DBAuser'@'localhost' IDENTIFIED BY 'Xampp640697';
 -- username: DBAuser & password: Xampp64097
-GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost'; 
--- To use custom username & password: change content in DbConnection.php file using a text editor
+CREATE USER 'DBAuser'@'localhost' IDENTIFIED BY 'Xampp640697';
+
+-- to use custom username & password: change content in DbConnection.php file using a text editor
+
+-- grant database administrator privileges to the created DBAuser
+GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost';
 ```
 
-*	open the script prod_p2p_bk from the contents of the unzipped folder
-*	Run the script to import database
-*	The restored database does not have any unused views, functions and stored procedures and has the stored procedures required to generate reports
+*	Open the script prod_p2p_bk from the contents of the unzipped folder
+*	Run the script on MySQL Workbench to import the prod_p2p database 
+*	This restored database does not have any unused views, functions and stored procedures
+* The prod_p2p database has stored procedures required to generate reports from the web application
 *	To check if the database is properly connected open: http://localhost/webapp_p2p/DbConnection.php
-*	A successful deployment of the database would show a blank screen.
-*	If not, open the DbConnection.php file from the contents of the unzipped folder and verify if details such as username & password are correct
-*	If you see a blank screen, visit the home page: http://localhost/webapp_p2p/ProjectPresentation.php
+*	A successful deployment of the database shows a blank screen.
+*	If you do not see a blank screen:
+      - open the DbConnection.php file from the contents of the unzipped folder
+      - verify if details such as username & password are correct
+*	If you see a blank screen:
+      - visit the home page: http://localhost/webapp_p2p/ProjectPresentation.php
+      - use other aspects of my web application
 
 
-## Authors
+## Author
 
-* **Prakash Dontaraju** [LinkedIn](https://www.linkedin.com/in/prakashdontaraju), [Medium](https://medium.com/@wittygrit)
+**Prakash Dontaraju** [LinkedIn](https://www.linkedin.com/in/prakashdontaraju) [Medium](https://medium.com/@wittygrit)
 
 
 ## Acknowledgments
@@ -57,6 +68,6 @@ My web application presents information extracted from the following data source
 * [Online Mendelian Inheritance in Man (OMIM)](http://omim.org/)
 * [Disease Ontology (DO)](http://disease-ontology.org/)
 
-I selected only a few diseases and utilized their associated protein/gene data. However, all data belongs to these specified entities.
+I selected a few diseases and utilized the associated protein/gene data. However, all data belongs to these specified entities.
 
 
