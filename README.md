@@ -4,9 +4,11 @@ prod_p2p is a web application that provides protein-phenotype information. A phe
 
 I developed this web application by engineering a MySQL database and utilizing PHP, HTML & CSS.
 
+
 ## Getting Started
 
 Kindly continue reading for instructions on how to deploy my project on your local machine.
+
 
 ### Prerequisites
 
@@ -17,18 +19,19 @@ You must have administrator access to install the following:
 
 Browser       Chrome or any other
 Servers       Web server, database server, PHP server
-XAMPP         5.6.32/PHP 5.6.32 or better
+XAMPP         5.6.32/PHP 5.6.32 or newer
 MySQL         MySQL Workbench
 Text Editor   VS Code or any other
 ```
+
 
 ## Deployment
 
 Follow the instructions to successfully deploy my web application:
 
-*	Run Apache server and MySQL server on XAMPP
-*	Unzip the file webapp_p2p into htdocs sub-folder within the installed xampp folder
-*	Launch MySQL Workbench and create a DBA user by running the following code in MySql Workbench:
+* Run Apache server and MySQL server on XAMPP
+* Unzip the file webapp_p2p into htdocs sub-folder within the installed xampp folder
+* Launch MySQL Workbench and create a DBA user by running the following code in MySql Workbench:
 
 ```
 -- username: DBAuser & password: Xampp64097
@@ -40,16 +43,18 @@ CREATE USER 'DBAuser'@'localhost' IDENTIFIED BY 'Xampp640697';
 GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost';
 ```
 
-*	Open the script prod_p2p_bk from the contents of the unzipped folder
-*	Run the script on MySQL Workbench to import the prod_p2p database 
-*	This restored database does not have any unused views, functions and stored procedures
+* Open the script prod_p2p_bk from the contents of the unzipped folder
+* Run the script on MySQL Workbench to import the prod_p2p database 
+* This restored database does not have any unused views, functions and stored procedures
 * The prod_p2p database has stored procedures required to generate reports from the web application
-*	To check if the database is properly connected open: http://localhost/webapp_p2p/DbConnection.php
-*	A successful deployment of the database shows a blank screen.
-*	If you do not see a blank screen:
-      - open the DbConnection.php file from the contents of the unzipped folder
-      - verify if details such as username & password are correct
-*	If you see a blank screen:
+* To check if the database is properly connected open: http://localhost/webapp_p2p/DbConnection.php
+* A successful deployment of the database shows a blank screen.
+
+* If you do not see a blank screen:
+      - Open the DbConnection.php file from the contents of the unzipped folder
+      - Verify if details such as username & password are correct
+
+* If you see a blank screen:
       - visit the home page: http://localhost/webapp_p2p/ProjectPresentation.php
       - use other aspects of my web application
 
