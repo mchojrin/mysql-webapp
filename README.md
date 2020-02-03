@@ -51,12 +51,12 @@ GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost';
 * A successful deployment of the database shows a blank screen.
 
 * If you do not see a blank screen:
-      - Open the DbConnection.php file from the contents of the unzipped folder
-      - Verify if details such as username & password are correct
+ - Open the DbConnection.php file from the contents of the unzipped folder
+ - Verify if details such as username & password are correct
 
 * If you see a blank screen:
-      - visit the home page: http://localhost/webapp_p2p/ProjectPresentation.php
-      - use other aspects of my web application
+ - visit the home page: http://localhost/webapp_p2p/ProjectPresentation.php
+ - use other aspects of my web application
 
 
 ## Author
@@ -73,6 +73,6 @@ My web application presents information extracted from the following data source
 * [Online Mendelian Inheritance in Man (OMIM)](http://omim.org/)
 * [Disease Ontology (DO)](http://disease-ontology.org/)
 
-I selected a few diseases and utilized the associated protein/gene data. However, all data belongs to these specified entities.
+I selected a few diseases and utilized the associated protein/gene data. However, all data belongs to the specified entities.
 
 
