@@ -65,7 +65,7 @@ Text Editor   VS Code or any other
 Instructions to successfully deploy my web application:
 
 * Run Apache server and MySQL server on XAMPP
-* Copy webapp_p2p folder contents into htdocs sub-folder within the installed xampp folder
+* Unzip [webapp_p2p.zip](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/webapp_p2p.zip) contents into htdocs sub-folder within the installed xampp folder
 * Launch MySQL Workbench and create a DBA user by running the following code in MySQL Workbench:
 
 ```
@@ -78,14 +78,13 @@ CREATE USER 'DBAuser'@'localhost' IDENTIFIED BY 'Xampp640697';
 GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost';
 ```
 
-* Open the script prod_p2p_bk from the webapp_p2p folder contents
+* Open the script [prod_p2p_bk](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/prod_p2p_bk.sql) from the contents of the unzipped folder
 * Run the script on MySQL Workbench to import the prod_p2p database 
-* This restored database does not have any unused views, functions and stored procedures
-* The prod_p2p database has stored procedures required to generate reports from the web application
+* The restored prod_p2p database has views, functions and stored procedures required to generate reports from the web application
 * To check if the database is properly connected open: http://localhost/webapp_p2p/DbConnection.php
 * A successful deployment of the database shows a blank screen as below:
 
-![prod_p2p successful deployment](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/1.PNG)
+<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/1.PNG">
 
 * If you do not see a blank screen:
   - Open the DbConnection.php file from the contents of the unzipped folder
@@ -105,25 +104,25 @@ GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost';
 
 <img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/6.PNG">
 
-### Reports 
+### Reports
 
 <img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/9.PNG">
 
-#### Gene Details
+#### Report 1: Gene Details
 
 <img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/10.PNG">
 
-#### Protein Synonym Information
+#### Report 2: Protein Synonym Information
 
 <img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/11.PNG">
 
-#### Protein, Disease & Database related data
+#### Reports 3 to 6: Protein, Disease & Database related reports
 
 <img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/12.PNG">
 
 ### App Documentation
 
-To view the rest of the app visuals click [here](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/app_documentation.md).
+The rest of the app is [here](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/app_documentation.md).
 
 ## Connect With Me
 
