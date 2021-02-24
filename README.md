@@ -99,31 +99,31 @@ GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost';
 
 ### Landing Page
 
-<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/2.PNG" width="250">
+<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/2.PNG">
 
 ### Entity-Relationship Diagram
 
-![prod_p2p ER model](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/6.PNG)
+<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/6.PNG">
 
 ### Reports 
 
-![prod_p2p Reports](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/9.PNG)
+<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/9.PNG">
 
 #### Gene Details
 
-![prod_p2p Gene Report](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/10.PNG)
+<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/10.PNG">
 
 #### Protein Synonym Information
 
-![prod_p2p Protein Report](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/11.PNG)
+<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/11.PNG">
 
 #### Protein, Disease & Database related data
 
-![prod_p2p General Report](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/12.PNG)
+<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/12.PNG">
 
 ### App Documentation
 
-To view the rest of the app visuals click [here](app_documentation.md).
+To view the rest of the app visuals click [here](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/app_documentation.md).
 
 ## Connect With Me
 
