@@ -16,7 +16,7 @@
 
 ### Instructions to Use
 
-![prod_p2p usage instructions](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/8.PNG)
+![prod_p2p usage instructions](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/8.png)
 
 ### Future Work
 

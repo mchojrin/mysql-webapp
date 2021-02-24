@@ -99,7 +99,7 @@ GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost';
 
 ### Landing Page
 
-![prod_p2p web application](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/2.PNG)
+<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/2.PNG" width="250">
 
 ### Entity-Relationship Diagram
 
