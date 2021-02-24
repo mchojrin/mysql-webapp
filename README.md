@@ -1,22 +1,58 @@
 # mysql-webapp
 
-prod_p2p is a web application that provides protein-phenotype information. A phenotype is the set of observable characteristics of an individual resulting from the interaction of its genotype with the environment.
+## Business Case
 
-I developed this web application by engineering a MySQL database and utilizing PHP, HTML & CSS.
+The scientists in our company (customers) require a web application to view protein, gene and disease information as well as generate customized reports.
 
+This information is otherwise retrieved manually from multiple resources specified below. 
 
-## Getting Started
+### Focus
 
-Kindly continue reading for instructions on how to deploy my project on your local machine.
+prod_p2p is a web application that provides this information and allows to generate customized reports. I developed this web application by engineering a MySQL database from the below data sources and utilizing PHP, HTML & CSS.
 
+### Data Sources
 
-### Prerequisites
+* [The Universal Protein Resource (UniProt)](https://www.uniprot.org/uniprot/)
+* [HUGO Gene Nomenclature Committee at the European Bioinformatics Institute (HGNC)](https://www.genenames.org/)
+* [Online Mendelian Inheritance in Man (OMIM)](http://omim.org/)
+* [Disease Ontology (DO)](http://disease-ontology.org/)
 
-What are the tools you need to install?
+I selected a few diseases and utilized the associated protein and gene data. All data belongs to these entities.
+
+## Process
+
+* Noted business requirements in detail (iterative process)
+
+* Collected data from the 4 data sources
+
+* Performed Data Modeling
+  - Conceptual Data Model
+  - Logical Data Model
+  - Physical Data Models
+
+* Applied Data Normalization
+  - First Normal Form
+  - Second Normal Form
+  - Third Normal Form
+
+* Engineered a MySQL Database
+  - Transformed & Loaded Data (.csv to MySQL database)
+  - Validated foreign keys among tables & created SQL Views
+  - Built custom Functions & Stored Procedures to include in reports
+
+* Optimized MySQL Performance
+  - Database structure
+  - SQL statements
+
+* Developed the Website
+  - PHP
+  - HTML & CSS
+
+## Implementation
+
+### Tools
 
 ```
-You must have administrator access to install the following:
-
 Browser       Chrome or any other
 Servers       Web server, database server, PHP server
 XAMPP         5.6.32/PHP 5.6.32 or newer
@@ -24,14 +60,13 @@ MySQL         MySQL Workbench
 Text Editor   VS Code or any other
 ```
 
+### Deployment
 
-## Deployment
-
-Follow the instructions to successfully deploy my web application:
+Instructions to successfully deploy my web application:
 
 * Run Apache server and MySQL server on XAMPP
-* Unzip the file webapp_p2p into htdocs sub-folder within the installed xampp folder
-* Launch MySQL Workbench and create a DBA user by running the following code in MySql Workbench:
+* Copy webapp_p2p folder contents into htdocs sub-folder within the installed xampp folder
+* Launch MySQL Workbench and create a DBA user by running the following code in MySQL Workbench:
 
 ```
 -- username: DBAuser & password: Xampp64097
@@ -43,12 +78,14 @@ CREATE USER 'DBAuser'@'localhost' IDENTIFIED BY 'Xampp640697';
 GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost';
 ```
 
-* Open the script prod_p2p_bk from the contents of the unzipped folder
+* Open the script prod_p2p_bk from the webapp_p2p folder contents
 * Run the script on MySQL Workbench to import the prod_p2p database 
 * This restored database does not have any unused views, functions and stored procedures
 * The prod_p2p database has stored procedures required to generate reports from the web application
 * To check if the database is properly connected open: http://localhost/webapp_p2p/DbConnection.php
-* A successful deployment of the database shows a blank screen.
+* A successful deployment of the database shows a blank screen as below:
+
+![prod_p2p successful deployment](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/1.PNG)
 
 * If you do not see a blank screen:
   - Open the DbConnection.php file from the contents of the unzipped folder
@@ -58,21 +95,36 @@ GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost';
   - visit the home page: http://localhost/webapp_p2p/ProjectPresentation.php
   - use other aspects of my web application
 
+## Web application 
 
-## Author
+### Landing Page
 
-**Prakash Dontaraju** [LinkedIn](https://www.linkedin.com/in/prakashdontaraju) [Medium](https://medium.com/@wittygrit)
+![prod_p2p web application](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/2.PNG)
 
+### Entity-Relationship Diagram
 
-## Acknowledgments
+![prod_p2p ER model](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/6.PNG)
 
-My web application presents information extracted from the following data sources:
+### Reports 
 
-* [The Universal Protein Resource (UniProt)](https://www.uniprot.org/uniprot/)
-* [HUGO Gene Nomenclature Committee at the European Bioinformatics Institute (HGNC)](https://www.genenames.org/)
-* [Online Mendelian Inheritance in Man (OMIM)](http://omim.org/)
-* [Disease Ontology (DO)](http://disease-ontology.org/)
+![prod_p2p Reports](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/9.PNG)
 
-I selected a few diseases and utilized the associated protein/gene data. However, all data belongs to the specified entities.
+#### Gene Details
 
+![prod_p2p Gene Report](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/10.PNG)
 
+#### Protein Synonym Information
+
+![prod_p2p Protein Report](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/11.PNG)
+
+#### Protein, Disease & Database related data
+
+![prod_p2p General Report](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/12.PNG)
+
+### App Documentation
+
+To view the rest of the app visuals click [here](app_documentation.md).
+
+## Connect With Me
+
+**Prakash Dontaraju** [LinkedIn](https://www.linkedin.com/in/prakashdontaraju) [Twitter](https://twitter.com/WittyGrit) [Medium](https://medium.com/@wittygrit)
