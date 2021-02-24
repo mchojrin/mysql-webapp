@@ -36,7 +36,7 @@ I selected a few diseases and utilized the associated protein and gene data. All
   - Third Normal Form
 
 * Engineered a MySQL Database
-  - Transformed & Loaded Data (.csv to MySQL database)
+  - Transformed & Loaded Data (local .csv to MySQL database)
   - Validated foreign keys among tables & created SQL Views
   - Built custom Functions & Stored Procedures to include in reports
 
@@ -47,6 +47,14 @@ I selected a few diseases and utilized the associated protein and gene data. All
 * Developed the Website
   - PHP
   - HTML & CSS
+
+### Home Page
+
+<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/2.PNG">
+
+### Entity-Relationship Diagram
+
+<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/6.PNG">
 
 ## Implementation
 
@@ -94,35 +102,25 @@ GRANT ALL PRIVILEGES ON * . * TO 'DBAuser'@'localhost';
   - visit the home page: http://localhost/webapp_p2p/ProjectPresentation.php
   - use other aspects of my web application
 
-## Web application 
-
-### Landing Page
-
-<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/2.PNG">
-
-### Entity-Relationship Diagram
-
-<img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/6.PNG">
-
-### Reports
+## Reports
 
 <img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/9.PNG">
 
-#### Report 1: Gene Details
+### Report 1: Gene Details
 
 <img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/10.PNG">
 
-#### Report 2: Protein Synonym Information
+### Report 2: Protein Synonym Information
 
 <img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/11.PNG">
 
-#### Reports 3 to 6: Protein, Disease & Database related reports
+### Reports 3 to 6: Protein, Disease & Database data reports
 
 <img src="https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/p2p_images/12.PNG">
 
-### App Documentation
+## App Documentation
 
-The rest of the app is [here](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/app_documentation.md).
+I included further details about data set, deployment & usage instructions, practical applications and future work [here](https://github.com/prakashdontaraju/mysql-webapp/blob/master/webapp_p2p/app_documentation.md).
 
 ## Connect With Me
 
