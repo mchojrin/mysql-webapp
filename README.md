@@ -1,4 +1,4 @@
-# mysql-webapp
+# Web App To Quickly Know Proteins Associated With Diseases
 
 ## Business Case
 
