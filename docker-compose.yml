@@ -1,0 +1,23 @@
+version: '3.1'
+services:
+  mysql:
+    image: 'mysql:5.7.42-debian'
+    volumes:
+      - './db/prod_p2p_bk.sql:/docker-entrypoint-initdb.d/init.sql'
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=DBAuser
+      - MYSQL_PASSWORD=app
+      - MYSQL_DATABASE=prod_p2p
+    ports:
+      - '8082:3306'
+    restart: always
+  webserver:
+    image: 'porchn/php5.6-apache'
+    volumes:
+      - './app:/var/www/html'
+      - './apache2/site.conf:/etc/apache2/sites-available/000-default.conf'
+    ports:
+      - '8080:80'
+    links:
+      - mysql

@@ -5,9 +5,9 @@ To run it as a php file:
 http://localhost/webapp_p2p/DbConnection.php
 */
 /* mariadb */
-	$dbhost ="localhost:3306";
+	$dbhost ="mysql:3306";
 	$dbuser = "DBAuser";
-	$dbpass = "Xampp640697";	
+	$dbpass = "app";
 	$dbname = "prod_p2p";
 
 

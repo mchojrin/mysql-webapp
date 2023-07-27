@@ -59,7 +59,7 @@ if(!empty($connection))
 		$result = mysqli_query($connection, $query);
 		if (!$result)
 		{
-			die("Database query failed.");
+			die("Database query failed: ".mysqli_error($connection));
 		}
 }		
 ?>
